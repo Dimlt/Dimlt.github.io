@@ -13,9 +13,9 @@ jQuery(function($){
 
 	// 存储最基础的导航栏class值
 	navbar_color_base = $('nav').attr("class");
-	// 根据用户本地保存的导航栏颜色进行初始化设置
+	// 设置用户的首次导航栏为黑色
 	if(localStorage.getItem("navbar_inverse") == null){
-		localStorage.setItem("navbar_inverse",0);
+		localStorage.setItem("navbar_inverse",1);
 	};
 	// 设置导航栏黑色背景,白色就是默认的颜色,所以不用设置了
 	if(localStorage.getItem("navbar_inverse") == 1){
