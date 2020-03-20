@@ -9,7 +9,7 @@ jQuery(function($){
         {
             name: 'name1',
             artist: 'artist1',
-            url: 'music/AKEN - MAMAMOO-WIND FLOWER（AKEN Remix）.mp3',
+            url: 'https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io/musics/AKEN - MAMAMOO-WIND FLOWER（AKEN Remix）.mp3',
             cover: 'cover1.jpg',
             //lrc: 'lrc1.lrc',
         },
