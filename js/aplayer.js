@@ -7,11 +7,11 @@ jQuery(function($){
 	lrcType: 3,
     audio: [
         {
-            name: 'name1',
-            artist: 'artist1',
-            url: 'https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io/musics/AKEN - MAMAMOO-WIND FLOWER（AKEN Remix）.mp3',
-            cover: 'cover1.jpg',
-            lrc: 'lrc1.lrc',
+            name: 'Mamamoo-Wind flower',
+            artist: 'Mamamoo',
+            url: 'https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io/musics/Mamamoo-Wind flower.mp3',
+            cover: 'https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io/musics/Mamamoo-Wind flower.jpg',
+            lrc: 'https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io/musics/Mamamoo-Wind flower.lrc',
         },
         {
             name: 'name2',
