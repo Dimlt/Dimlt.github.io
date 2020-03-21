@@ -10,7 +10,7 @@ jQuery(function($){
             name: 'Wind flower',
             artist: 'MAMAMOO',
             url: 'https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.0.1/musics/MAMAMOO-WIND FLOWER（AKEN Remix）-AKEN.mp3',
-            cover: 'https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.0.1/musics/Mamamoo-Wind flower.jpg',
+            cover: 'https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.0.1/musics/MAMAMOO-WIND FLOWER（AKEN Remix）-AKEN.jpg',
             lrc: 'https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.0.1/musics/MAMAMOO-WIND FLOWER（AKEN Remix）-AKEN.lrc',
         },
 		
