@@ -57,7 +57,7 @@ function get_search_history(){
 		// 往前追加显示非标签历史记录
 		$(".search-history-label + li").after(search_history_array_html);
 		// 当为非标签历史记录的最后一个的时候,删除最后的那根横线
-		if(index == search_history_array.length){
+		if(index == search_history_array.length-1){
 			$('.search-history-ul').children("li:last-child").remove();
 		}
 	});
