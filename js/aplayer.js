@@ -13,13 +13,7 @@ jQuery(function($){
             cover: 'https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io/musics/Mamamoo-Wind flower.jpg',
             lrc: 'https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io/musics/MAMAMOO-WIND FLOWER（AKEN Remix）-AKEN.lrc',
         },
-		{
-            name: 'Once upon a Time',
-            artist: 'Max Oazo _ Moonessa',
-            url: 'https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io/musics/Max Oazo _ Moonessa - Once upon a Time.mp3',
-            cover: 'https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io/musics/Mamamoo-Wind flower.jpg',
-            lrc: 'https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io/musics/Once Upon A Time-Max Oazo,Moonessa.lrc',
-        }
+		
     ]
 });
 	
