@@ -10,6 +10,6 @@ function search(value){
 	// 否则点击的是传递了参数进来的链接按钮	
 	}else{
 		add_search_history(value);
-		$(".my-main-div").load("https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.2.0/htmls/dimlt.github.io.info.html");
+		$(".my-main-div").load("https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.2.1/htmls/dimlt.github.io.info.html");
 	}
 }
