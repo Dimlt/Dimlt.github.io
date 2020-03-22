@@ -1,5 +1,6 @@
+var ap;
 jQuery(function($){
-	const ap = new APlayer({
+	ap = new APlayer({
 		container: document.getElementById('aplayer'),
 		fixed: true,
 		listFolded: true,
@@ -7,48 +8,55 @@ jQuery(function($){
 		lrcType: 3,
 		audio: [
 			{
-				name: 'WIND FLOWER（AKEN Remix）',
-				artist: 'AKEN',
-				url: 'https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.1.9/musics/MAMAMOO-WIND FLOWER（AKEN Remix）-AKEN.mp3',
-				cover: 'https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.1.9/musics/MAMAMOO-WIND FLOWER（AKEN Remix）-AKEN.jpg',
-				lrc: 'https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.1.9/musics/MAMAMOO-WIND FLOWER（AKEN Remix）-AKEN.lrc',
-			},
-			{
-				name: 'Family Affair',
-				artist: 'Mary J. Blige',
-				url: 'https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.1.9/musics/Family Affair-Mary J. Blige.mp3',
-				cover: 'https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.1.9/musics/Family Affair-Mary J. Blige.jpg',
-				lrc: 'https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.1.9/musics/Family Affair-Mary J. Blige.lrc',
-			},
-			{
-				name: '冷咖啡',
-				artist: '李迦南Doc,尚先生',
-				url: 'https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.1.9/musics/冷咖啡-李迦南Doc,尚先生.mp3',
-				cover: 'https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.1.9/musics/冷咖啡-李迦南Doc,尚先生.jpg',
-				lrc: 'https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.1.9/musics/冷咖啡-李迦南Doc,尚先生.lrc',
+				name: 'Down',
+				artist: 'Marian Hill',
+				url: 'https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.2.0/musics/Down-Marian Hill.mp3',
+				cover: 'https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.2.0/musics/Down-Marian Hill.jpg',
+				lrc: 'https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.2.0/musics/Down-Marian Hill.lrc',
 			},
 			{
 				name: 'Easy Come Easy Go',
 				artist: '蔡健雅,MC Hotdog',
-				url: 'https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.1.9/musics/Easy Come Easy Go-蔡健雅,MC Hotdog.mp3',
-				cover: 'https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.1.9/musics/Easy Come Easy Go-蔡健雅,MC Hotdog.jpg',
-				lrc: 'https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.1.9/musics/Easy Come Easy Go-蔡健雅,MC Hotdog.lrc',
+				url: 'https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.2.0/musics/Easy Come Easy Go-蔡健雅,MC Hotdog.mp3',
+				cover: 'https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.2.0/musics/Easy Come Easy Go-蔡健雅,MC Hotdog.jpg',
+				lrc: 'https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.2.0/musics/Easy Come Easy Go-蔡健雅,MC Hotdog.lrc',
+			},
+			{
+				name: 'Family Affair',
+				artist: 'Mary J. Blige',
+				url: 'https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.2.0/musics/Family Affair-Mary J. Blige.mp3',
+				cover: 'https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.2.0/musics/Family Affair-Mary J. Blige.jpg',
+				lrc: 'https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.2.0/musics/Family Affair-Mary J. Blige.lrc',
+			},
+			{
+				name: 'MAMAMOO-WIND FLOWER（AKEN Remix）',
+				artist: 'AKEN',
+				url: 'https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.2.0/musics/MAMAMOO-WIND FLOWER（AKEN Remix）-AKEN.mp3',
+				cover: 'https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.2.0/musics/MAMAMOO-WIND FLOWER（AKEN Remix）-AKEN.jpg',
+				lrc: 'https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.2.0/musics/MAMAMOO-WIND FLOWER（AKEN Remix）-AKEN.lrc',
 			},
 			{
 				name: 'Old Town Road (Remix)',
 				artist: 'Lil Nas X,Billy Ray Cyrus',
-				url: 'https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.1.9/musics/Old Town Road (Remix)-Lil Nas X,Billy Ray Cyrus.mp3',
-				cover: 'https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.1.9/musics/Old Town Road (Remix)-Lil Nas X,Billy Ray Cyrus.jpg',
-				lrc: 'https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.1.9/musics/Old Town Road (Remix)-Lil Nas X,Billy Ray Cyrus.lrc',
+				url: 'https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.2.0/musics/Old Town Road (Remix)-Lil Nas X,Billy Ray Cyrus.mp3',
+				cover: 'https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.2.0/musics/Old Town Road (Remix)-Lil Nas X,Billy Ray Cyrus.jpg',
+				lrc: 'https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.2.0/musics/Old Town Road (Remix)-Lil Nas X,Billy Ray Cyrus.lrc',
 			},
 			{
-				name: 'Down',
-				artist: 'Marian Hill',
-				url: 'https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.1.9/musics/Down-Marian Hill.mp3',
-				cover: 'https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.1.9/musics/Down-Marian Hill.jpg',
-				lrc: 'https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.1.9/musics/Down-Marian Hill.lrc',
+				name: '冷咖啡',
+				artist: '李迦南Doc,尚先生',
+				url: 'https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.2.0/musics/冷咖啡-李迦南Doc,尚先生.mp3',
+				cover: 'https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.2.0/musics/冷咖啡-李迦南Doc,尚先生.jpg',
+				lrc: 'https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.2.0/musics/冷咖啡-李迦南Doc,尚先生.lrc',
 			}
 		]
 	});
 	
 });
+
+
+// 输入音乐列表序号(从0开始),切换音乐,并播放
+function switch_song(num){
+	ap.list.switch(num);
+	ap.play();
+}
