@@ -1,6 +1,7 @@
 // 搜索历史的具体js代码 
 // 使用该功能时,在ul标签的class属性中追加一个 search-history-ul 值即可
 
+// 导航栏标签数组
 var availableTags = new Array();
 
 jQuery(function($){
