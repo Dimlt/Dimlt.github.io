@@ -4,19 +4,19 @@
 <title>我的第一个 HTML 页面</title>
 </head>
 <!-- 网页ico -->
-<link rel="icon" href="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.2.5/images/icos/Crayon Shin-chan.ico" type="image/x-icon" />
-<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.2.5/images/icos/Crayon Shin-chan.ico" type="image/x-icon" />
+<link rel="icon" href="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.2.6/images/icos/Crayon Shin-chan.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.2.6/images/icos/Crayon Shin-chan.ico" type="image/x-icon" />
 
 <!-- bootstrap.min.css -->
 <link href="https://cdn.bootcss.com/twitter-bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
 <!-- 自动提示搜索关键字的css -->
 <link href="https://cdn.bootcss.com/jqueryui/1.12.1/jquery-ui.min.css" rel="stylesheet">
 <!-- APlayer.css -->
-<link href="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.2.5/backups/APlayer/APlayer.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.2.6/backups/APlayer/APlayer.min.css" rel="stylesheet">
 
 <!-- 使用CSDN的MD编辑器用到的css文件,直接点查看,然后复制页面上的element,即可 -->
-<link href="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.2.5/css/markdown_views-b6c3c6d139.min.css" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.2.5/css/detail-075a8c7524.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.2.6/css/markdown_views-b6c3c6d139.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.2.6/css/detail-075a8c7524.min.css" rel="stylesheet">
 
 
 <body style="font-family:'Ubuntu','Roboto','Open Sans','Microsoft YaHei','sans-serif'">
@@ -170,7 +170,10 @@
 								</li>
 								<li class="dropdown-header">解压</li>
 								<li>
-									 <a href="javascript:search('解压缩软件')">解压缩软件</a>
+									 <a href="javascript:search('WinRAR')">WinRAR</a>
+								</li>
+								<li>
+									 <a href="javascript:search('7-Zip')">7-Zip</a>
 								</li>
 							</ul>
 						</li>
@@ -305,6 +308,22 @@
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
 						<li>
+							 <a style="display:inline-block">
+								<span id="to-top-span">
+									<img alt="👆" src="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.2.6/images/to-top-bottom/top1.png" onclick="to_top()" style="cursor:pointer;margin-top:-2px;" id="to-top-img1"/>
+									<img alt="👆" src="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.2.6/images/to-top-bottom/top2.png" onclick="to_top()" style="cursor:pointer;margin-top:-2px;display:none;" id="to-top-img2"/>
+								</span>
+							 </a>
+							 <a style="display:inline-block;margin-left:-20px;">
+								<span id="to-bottom-span">
+									<img alt="👇" src="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.2.6/images/to-top-bottom/bottom1.png"
+									onclick="to_bottom()" style="cursor:pointer;margin-top:-2px;" id="to-bottom-img1"/>
+									<img alt="👇" src="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.2.6/images/to-top-bottom/bottom2.png"
+									onclick="to_bottom()" style="cursor:pointer;margin-top:-2px;display:none;" id="to-bottom-img2"/>
+								</span>
+							 </a>
+						</li>
+						<li>
 							 <a href="#">登录</a>
 						</li>
 						<li>
@@ -358,39 +377,41 @@
 
 <!-- 发布到GitHub的cdn加速地址 -->
 <!-- 引入其他的js文件 -->
-<script src="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.2.5/js/others.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.2.6/js/others.min.js"></script>
 <!-- 历史记录js文件,自动提示关键字js文件 -->
-<script src="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.2.5/js/search-history.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.2.6/js/search-history.min.js"></script>
 <!-- 控制台输出CGM的js文件 -->
-<script src="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.2.5/js/cgm.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.2.6/js/cgm.min.js"></script>
 <!-- 点击后出现烟花效果 -->
-<script src="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.2.5/js/cursor-effects.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.2.6/js/cursor-effects.min.js"></script>
 <!-- 搜索功能的js文件 -->
-<script src="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.2.5/js/search.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.2.6/js/search.min.js"></script>
 <!-- APlyaer基础js文件 -->
-<script src="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.2.5/backups/APlayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.2.6/backups/APlayer/APlayer.min.js"></script>
 <!-- APlyaer配置的js文件 -->
-<script src="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.2.5/js/aplayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.2.6/js/aplayer.min.js"></script>
 <!-- 不蒜子,极简网页计数器(统计访客数量) -->
-<script async src="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.2.5/backups/busuanzi/busuanzi.pure.mini.js"></script>
+<script async src="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.2.6/backups/busuanzi/busuanzi.pure.mini.js"></script>
 <!-- 网站运行时间统计 -->
-<script src="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.2.5/js/web-create-time.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.2.6/js/web-create-time.min.js"></script>
+<!-- 网页置顶,置底按钮的js文件 -->
+<script src="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.2.6/js/to-top-bottom.min.js"></script>
 
 
 <!-- 本地版本,发布到github时需要注释掉 
 <script src="js/others.js"></script>
 <script src="js/search-history.js"></script>
 <script src="js/search.js"></script>
-<script src="js/aplayer.js"></script>-->
-
+<script src="js/aplayer.js"></script>
+<script src="js/to-top-bottom.js"></script>-->
 
 
 
 <!-- 网页小猫 -->
-<script src="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.2.5/live2dw/lib/L2Dwidget.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.2.6/live2dw/lib/L2Dwidget.min.js"></script>
 <script>
 <!-- 初始化网页小猫(init方法,然后把live2dw文件夹拷过去就行了,就这两步) -->
-L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.2.5/live2dw/assets/hijiki.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true}});
+L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.2.6/live2dw/assets/hijiki.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true}});
 </script>
 
 </body>
