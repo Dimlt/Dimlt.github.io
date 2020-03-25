@@ -3,7 +3,7 @@
 function do_login(){
 
     // 登录的路径
-    var url = 'http://39.97.253.169:8080/user/login';
+    var url = 'https://39.97.253.169/user/login';
     // 登录时传递的参数
     var params={
         username:$("#inputUsername").val(),
@@ -22,11 +22,11 @@ function do_login(){
         success : function(result){
             $('#login-message-span').empty();
             if(result[0].state == 20){
-                $('#login-message-span').css("color","#0dee11");
+                $('#login-message-span').css("color","rgb(48, 255, 52)");
                 $('#login-message-span').html(result[0].message);
                 console.log("登录成功:"+result[0].message);
             }else{
-                $('#login-message-span').css("color","rgb(48, 255, 52)");
+                $('#login-message-span').css("color","rgb(230, 17, 28)");
                 $('#login-message-span').html(result[0].message);
                 console.log("登录失败:"+result[0].message);
             }
