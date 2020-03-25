@@ -7,6 +7,9 @@ function search(value){
 		// 传递搜索框的内容,用来增加搜索历史记录
 		add_search_history($('.form-control').val());
 		
+		// TODO: 根据标签和内容进行搜索,如果没有则返回404页面
+		// 如果有: 按照标签,包含内容的次数进行排序
+		
 	// 否则点击的是传递了参数进来的链接按钮	
 	}else{
 		// 增加搜索历史记录
@@ -14,9 +17,9 @@ function search(value){
 		
 		// 如果该标签没有对应的html文件,则返回404页面
 		if(label_html_map.get(value) == undefined || label_html_map.get(value) == null || $.trim(label_html_map.get(value)) == ''){
-			$(".my-main-div").load("https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.2.7/htmls/404.html",search_finished_html);
+			$(".my-main-div").load("https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.2.8/htmls/404.html",search_finished_html);
 		}else{
-			$(".my-main-div").load("https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.2.7/htmls/"+label_html_map.get(value));
+			$(".my-main-div").load("https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.2.8/htmls/"+label_html_map.get(value));
 		}
 		
 	}
