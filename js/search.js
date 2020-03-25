@@ -17,9 +17,9 @@ function search(value){
 		
 		// 如果该标签没有对应的html文件,则返回404页面
 		if(label_html_map.get(value) == undefined || label_html_map.get(value) == null || $.trim(label_html_map.get(value)) == ''){
-			$(".my-main-div").load("https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.3.1/htmls/404.html",search_finished_html);
+			$(".my-main-div").load("https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.3.2/htmls/404.html",search_finished_html);
 		}else{
-			$(".my-main-div").load("https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.3.1/htmls/"+label_html_map.get(value));
+			$(".my-main-div").load("https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.3.2/htmls/"+label_html_map.get(value));
 		}
 		
 	}

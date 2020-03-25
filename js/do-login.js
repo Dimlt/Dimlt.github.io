@@ -23,12 +23,10 @@ function do_login(){
             $('#login-message-span').empty();
             if(result[0].state == 20){
                 $('#login-message-span').css("color","rgb(48, 255, 52)");
-                $('#login-message-span').html(result[0].message);
-                console.log("登录成功:"+result[0].message);
+                $('#login-message-span').append(result[0].message);
             }else{
                 $('#login-message-span').css("color","rgb(230, 17, 28)");
-                $('#login-message-span').html(result[0].message);
-                console.log("登录失败:"+result[0].message);
+                $('#login-message-span').append(result[0].message);
             }
         }
     });
