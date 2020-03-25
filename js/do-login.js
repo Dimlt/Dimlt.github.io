@@ -3,7 +3,7 @@
 function do_login(){
 
     // 登录的路径
-    var url = 'https://39.97.253.169/user/login';
+    var url = 'https://sdplayer2333.cn/user/login';
     // 登录时传递的参数
     var params={
         username:$("#inputUsername").val(),
