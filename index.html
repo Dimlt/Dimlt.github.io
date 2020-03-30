@@ -4,19 +4,19 @@
 <title>我的第一个 HTML 页面</title>
 </head>
 <!-- 网页ico -->
-<link rel="icon" href="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.3.2/images/icos/Crayon Shin-chan.ico" type="image/x-icon" />
-<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.3.2/images/icos/Crayon Shin-chan.ico" type="image/x-icon" />
+<link rel="icon" href="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.3.3/images/icos/Crayon Shin-chan.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.3.3/images/icos/Crayon Shin-chan.ico" type="image/x-icon" />
 
 <!-- bootstrap.min.css -->
 <link href="https://cdn.bootcss.com/twitter-bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
 <!-- 自动提示搜索关键字的css -->
 <link href="https://cdn.bootcss.com/jqueryui/1.12.1/jquery-ui.min.css" rel="stylesheet">
 <!-- APlayer.css -->
-<link href="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.3.2/backups/APlayer/APlayer.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.3.3/backups/APlayer/APlayer.min.css" rel="stylesheet">
 
 <!-- 使用MD编辑器用到的css文件,CSDN直接点查看,然后复制页面上的element,即可 -->
-<link href="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.3.2/css/markdown_views-b6c3c6d139.min.css" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.3.2/css/detail-075a8c7524.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.3.3/css/markdown_views-b6c3c6d139.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.3.3/css/detail-075a8c7524.min.css" rel="stylesheet">
 
 <body style="font-family:'Ubuntu','Roboto','Open Sans','Microsoft YaHei','sans-serif'">
 <div class="container">
@@ -298,32 +298,38 @@
 						</div> <button type="button" class="btn btn-default" onclick="search()">搜索</button>
 					</form>
 					<ul class="nav navbar-nav">
-						<li class="dropdown search-history-dropdown">
+						<li class="dropdown">
 							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">历史记录<strong class="caret"></strong></a>
 							<!-- 历史记录显示区域(给ul的classs添加search-history-ul,并导入js/search-history.js文件即可) -->
 							<ul class="dropdown-menu search-history-ul">
 							</ul>
 						</li>
 					</ul>
+					<!-- 打印我的简历 
+					<ul class="nav navbar-nav">
+						<li class="dropdown">
+							<a href="/pdfs/曹桂铭-大专-JavaWeb开发-18623366934.pdf" target="_blank" style="color: #337ab7;font-size: 5px;"><strong>打印我的简历</strong></a>
+						</li>
+					</ul>-->
 					<ul class="nav navbar-nav navbar-right">
 						<li>
 							 <a style="display:inline-block">
 								<span id="to-top-span">
-									<img alt="👆" src="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.3.2/images/to-top-bottom/top1.png" onclick="to_top()" style="cursor:pointer;margin-top:-2px;" id="to-top-img1"/>
-									<img alt="👆" src="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.3.2/images/to-top-bottom/top2.png" onclick="to_top()" style="cursor:pointer;margin-top:-2px;display:none;" id="to-top-img2"/>
+									<img alt="👆" src="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.3.3/images/to-top-bottom/top1.png" onclick="to_top()" style="cursor:pointer;margin-top:-2px;" id="to-top-img1"/>
+									<img alt="👆" src="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.3.3/images/to-top-bottom/top2.png" onclick="to_top()" style="cursor:pointer;margin-top:-2px;display:none;" id="to-top-img2"/>
 								</span>
 							 </a>
 							 <a style="display:inline-block;margin-left:-20px;">
 								<span id="to-bottom-span">
-									<img alt="👇" src="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.3.2/images/to-top-bottom/bottom1.png"
+									<img alt="👇" src="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.3.3/images/to-top-bottom/bottom1.png"
 									onclick="to_bottom()" style="cursor:pointer;margin-top:-2px;" id="to-bottom-img1"/>
-									<img alt="👇" src="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.3.2/images/to-top-bottom/bottom2.png"
+									<img alt="👇" src="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.3.3/images/to-top-bottom/bottom2.png"
 									onclick="to_bottom()" style="cursor:pointer;margin-top:-2px;display:none;" id="to-bottom-img2"/>
 								</span>
 							 </a>
 						</li>
 						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">登录</a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" id="login_a">登录</a>
 							<form class="form-horizontal dropdown-menu" role="form" style="background: rgba(0,0,0,0.05); width: 300px;">
 								<div class="form-group">
 									<label for="inputUsername" class="control-label" style="margin-left:30px;cursor:pointer">用户名</label>
@@ -350,19 +356,24 @@
 								<div class="form-group">
 									<div class="col-sm-offset-2 col-sm-10">
 										<button type="button" class="btn btn-default" onclick="do_login()"><strong>Sign in</strong></button>
+										<a href="https://sdplayer2333.cn/authorize" target="_blank"><strong>GitHub</strong></a>
 									</div>
 								</div>
 							</form>
 						</li>
 						<li>
-							 <a href="javascript:navbar_inverse()">黑/白&nbsp;&nbsp;</a>
+							<a href="javascript:navbar_inverse()">黑/白&nbsp;&nbsp;</a>
+						</li>
+						<li class="dropdown open" id="login-successfully-li" style="display: none;">
+							<div class="pull-right dropdown-menu" style="background: #4bc0c8;background: #dcd1ff;margin-top:52px;color: #2967c0;margin-right:15px;">
+								<strong style="padding-left:10px">登录成功 😀</strong>
+							</div>
 						</li>
 					</ul>
 				</div>
 			</nav>
 			<!-- Aplayer-div -->
 			<div id="aplayer"></div>
-
 		</div>
 	</div>
 </div>
@@ -389,6 +400,11 @@
 			<!-- 网站运行时间统计 -->
 			<span id="timeDate"></span><span id="times"></span>
 		</div>
+		<!-- 发布到sdplayer2333.cn网站时用来显示 备案号的 
+		<div>
+			Copyright © 2020-2020    <strong><a href="https://dimlt.github.io/" target="_blank" style="color: #337ab7">github个人博客</a></strong>&nbsp;
+			<strong><a href="//www.sdplayer2333.cn/" target="_blank" style="color: #337ab7">sdplayer2333.cn</a></strong> 版权所有 备案号：渝ICP备19015525号-1
+		</div>-->
     </div>
 	<hr>
 </footer>
@@ -405,27 +421,29 @@
 
 <!-- 发布到GitHub的cdn加速地址 -->
 <!-- 引入其他的js文件 -->
-<script src="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.3.2/js/others.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.3.3/js/others.min.js"></script>
 <!-- 历史记录js文件,自动提示关键字js文件 -->
-<script src="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.3.2/js/search-history.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.3.3/js/search-history.min.js"></script>
 <!-- 控制台输出CGM的js文件 -->
-<script src="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.3.2/js/cgm.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.3.3/js/cgm.min.js"></script>
 <!-- 点击后出现烟花效果 -->
-<script src="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.3.2/js/cursor-effects.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.3.3/js/cursor-effects.min.js"></script>
 <!-- 搜索功能的js文件 -->
-<script src="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.3.2/js/search.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.3.3/js/search.min.js"></script>
 <!-- APlyaer基础js文件 -->
-<script src="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.3.2/backups/APlayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.3.3/backups/APlayer/APlayer.min.js"></script>
 <!-- APlyaer配置的js文件 -->
-<script src="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.3.2/js/aplayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.3.3/js/aplayer.min.js"></script>
 <!-- 不蒜子,极简网页计数器(统计访客数量) -->
-<script async src="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.3.2/backups/busuanzi/busuanzi.pure.mini.js"></script>
+<script async src="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.3.3/backups/busuanzi/busuanzi.pure.mini.js"></script>
 <!-- 网站运行时间统计 -->
-<script src="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.3.2/js/web-create-time.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.3.3/js/web-create-time.min.js"></script>
 <!-- 网页置顶,置底按钮的js文件 -->
-<script src="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.3.2/js/to-top-bottom.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.3.3/js/to-top-bottom.min.js"></script>
 <!-- 基于jsonp: 登录功能js文件 -->
-<script src="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.3.2/js/do-login.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.3.3/js/do-login.min.js"></script>
+<!-- 登录完成之后 进行相关操作的 js文件 -->
+<script src="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.3.3/js/change_login_value.min.js"></script>
 
 
 <!-- 本地版本,发布到github时需要注释掉 
@@ -434,14 +452,16 @@
 <script src="js/to-top-bottom.js"></script>
 <script src="js/do-login.js"></script>
 <script src="js/others.js"></script>
+<script src="js/change_login_value.js"></script>
 <script src="js/search.js"></script>-->
 
 
+
 <!-- 网页小猫 -->
-<script src="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.3.2/live2dw/lib/L2Dwidget.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.3.3/live2dw/lib/L2Dwidget.min.js"></script>
 <script>
 // 初始化网页小猫(init方法,然后把live2dw文件夹拷过去就行了,就这两步)
-L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.3.2/live2dw/assets/hijiki.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true}});
+L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"https://cdn.jsdelivr.net/gh/dimlt/dimlt.github.io@0.3.3/live2dw/assets/hijiki.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true}});
 </script>
 
 </body>
